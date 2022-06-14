@@ -1,5 +1,8 @@
 import React from 'react'
 import TodoList from './Components/Todos.jsx'
+import SingleTodo from './Components/SingleTodo.jsx'
+
+
 // import { Component } from 'react'
 
 // var clicking = (props) => {
@@ -91,7 +94,7 @@ class App extends React.Component {
         ) : (
           <div>
           <h1>Single Item Listed Below</h1>
-          <h2>clicking</h2>
+          <SingleTodo />
           </div>
         )}
       </div>
