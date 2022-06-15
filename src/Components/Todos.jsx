@@ -35,12 +35,19 @@ class TodoList extends React.Component {
       <div className = "App">
           <h4> Items listed below </h4>  {
               items.map((item) => ( 
-              <ol key = { item.id } >
+                <div>
+              <ol key = { item.id }>
                   User_Name: { item.userID }, 
                   Full_Name: { item.title }, 
                   User_Email: { item.completed } 
                   </ol>
-              ))
+              <button onClick={(event) => {
+                // this.setState({ change: !this.state.change });
+                let id = item.id
+                console.log(id)
+                return id
+                }}>Click Here!</button>
+              </div>))
           }
       </div>
   );

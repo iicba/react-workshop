@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 class SingleTodo extends React.Component {
    
   // Constructor 
@@ -33,9 +35,9 @@ class SingleTodo extends React.Component {
       <div className = "SingleTodo"> 
       <h4> single div below</h4>{ 
       <ol key = { items.id } >
-      User_Name: { items.userId }, 
-      Full_Name: { items.title }, 
-      User_Email: { items.completed }
+      User_Id: { items.userId }, 
+      Title: { items.title }, 
+      Completed: { String(items.completed) }
       </ol>
           }
       </div>

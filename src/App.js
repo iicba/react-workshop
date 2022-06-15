@@ -79,13 +79,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <button
+        {/* <button
           onClick={(event) => {
             this.setState({ change: !this.state.change });
           }}
         >
           Click Here!
-        </button>
+        </button> */}
         {this.state.change ? (
           <div>
           <h1>To-Do List Overview</h1>
